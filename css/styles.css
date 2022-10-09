@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 *{
   /*margin: 0;
@@ -14,12 +15,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', cursive;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Bebas Neue", cursive;
 }
 
 header {
   position: absolute;
-  top: 3%;
+  top: 0;
   left: 0;
   width: 100%;
   height: 25%;
@@ -32,7 +33,7 @@ header {
 }
 
 .h1{
-  font-family: 'Fredoka One', cursive;
+  font-family: "Poppins", cursive;
   color:#000;
   text-align: center;
   font-size: 30px;
@@ -57,6 +58,7 @@ header {
     font-size: 1.5em;
     margin-left: .1em;
   }
+
 .group {
   display: flex;
   align-items: center;
@@ -102,6 +104,7 @@ header ul li a:hover:before {
     display: flex;
     width: 100%;
     height: 100%;
+    margin-top: 2%;
     margin-right: 20%;
     margin-left: 5%;
 }
@@ -117,6 +120,7 @@ header ul li a:hover:before {
   background: url(../img/3d.png);
   background-size: cover;
   background-position: center;
+
   width: 50%;
   height: 150vh;
 
@@ -125,6 +129,7 @@ background-color: rgb(30, 30, 30);
 
 .split-screen {
   display: flex;  
+  margin-bottom: .1em;
 }
 
 
@@ -208,41 +213,299 @@ text-align: center;
 
 
 
-/* --------------------------- SUBPAGE ---------------------------*/
-.brand{
-    /*background-color: coral;*/
-    display:flex;
-    flex-direction: column;
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-bottom: 2em;
-}
-.brand-text{
-    font-family: 'Fredoka One', cursive;
-    text-align: center;
-    font-size: 30px;
-    align-items: center;
-    margin-bottom: 1em;
-}
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+/* --------------------------- NOSOTROS (SERVICIOS?) ---------------------------*/
+
+.servicesright{
+  margin-top: 20%;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
+.services-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+}
+
+.featured-services{
+  margin-right: 10px;
+  margin-bottom: 2em;
+  width: 35%;
+}
+
+.servicesimg img{
+  
+  display: block;
+  border: 0;
+  width: 50%;
+  height: auto;
+}
+
+.services-contents {
+  padding: 1.4em;
+}
+
+.services-contents h2{
+  font-family: "Bebas Neue", cursive;
+  justify-content: center;
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: .5em;
+  font-weight: normal;
+}
+
+.services-contents p{
+  margin-top: 15%;
+  font-size: 95%;
+}
+
+.services-title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 40px;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 40%;
+  vertical-align: bottom;
+}
+
+.services-p{
+  font-family: "Bebas Neue", cursive;
+  font-size: 25px;
+  width: 50%;
+  margin: auto;
+  vertical-align: bottom;
+}
+
+/* --------------------------- NOSOTROS (PROYECTOS) ---------------------------*/
+
+.project-screen{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: .5em;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-bottom: 1em;
+}
+
+.subpage-title {
+  font-size: 1em;
+  margin-top: .3em;
+  margin-bottom: .2em;
+  margin-left: 0;
+}
+
+
+.slider{
+  position: relative;
+  background: rgb(233, 182, 253);
+  width: 800px;
+  min-height: 500px;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slider .slide{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+
+.slider .slide.active{
+  clip-path: circle(150% at 0 50%);
+  transition: 2s;
+}
+
+.slider .slide img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider .slide .info{
+  position: absolute;
+  color: #222;
+  background: rgba(247, 93, 239, 0.673);
+  width: 50%;
+  margin-top: 50px;
+  margin-left: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
+}
+
+.slider .slide .info h2{
+  font-size: 1em;
+  font-weight: 800;
+}
+
+.navigation{
+  height: 40%;
+  display: flex;
+  margin-left: 0;
+  align-items: center;
+  justify-content: space-between;
+  transition: opacity 0.5s ease;
+}
+
+.slider:hover .navigation{
+  opacity: 1;
+}
+
+.prev-btn, .next-btn{
+  z-index: 999;
+  font-size: 2em;
+  color: #222;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev-btn{
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.next-btn{
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.navigation-visibility{
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-visibility .slide-icon{
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.5);
+  width: 20px;
+  height: 10px;
+  transform: translateY(-50px);
+  margin: 0 6px;
+  border-radius: 2px;
+  box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+}
+
+.navigation-visibility .slide-icon.active{
+  background: #4285F4;
+}
+
+.brand{
+  display:flex;
+  flex-direction: column;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 2em;
+  margin-bottom: 4em;
+} 
+
+
+.brand-text{
+  font-family: 'Fredoka One', cursive;
+  text-align: center;
+  font-size: 30px;
+  align-items: center;
+  margin-top: 4em;
+  margin-bottom: 1em;
+} 
+
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 .brandimage{
-    margin-bottom: 3em;
-    width: 33%;
+  margin-bottom: 3em;
+  width: 33%;
 }
 
 .brandimage img{
-    display: block;
-    margin: auto;
-    border: 0;
-    width: 75%;
-    height: auto;
+  display: block;
+  margin: auto;
+  border: 0;
+  width: 55%;
+  height: auto;
 }
+
+
+
+  /* --------------------------- A TOTAL DISPOSICION DE LOS CAMBIOS QUE DESEEN ---------------------------*/
+  @media (max-width: 900px){
+    .slider{
+      width: 100%;
+    }
+  
+    .slider .slide .info{
+      position: relative;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  @media (max-width: 500px){
+    .slider .slide .info h2{
+      font-size: 1.8em;
+      line-height: 40px;
+    }
+  
+    .slider .slide .info p{
+      font-size: 0.9em;
+    }
+  }
+
+
+
+@media screen and (max-width: 700px){
+    header{
+        margin-left: 10px;
+    }
+    nav{
+        margin-left: 10px;
+        padding: 10px 0;
+    }
+
+    .left{
+        height: 50vh;
+        width: 100%;
+    }
+    
+    .right{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(30, 30, 30);
+    }
+    
+    .split-screen {
+      flex-direction: column; 
+    }
+    .main-title{
+        margin-top: 100px;
+    }
+
+    .footer-web .group-1{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    } 
+}
+
+/*
 
 @media screen and (max-width: 700px){
     header{
@@ -279,7 +542,7 @@ text-align: center;
         padding: 35px 0px;
     } 
 }
-
+*/
 
 /*--------Estilo de pagina de Equipo--------*/
 
