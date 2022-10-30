@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-    
+    <script src="../js/validacion.js" defer></script>
     <title>Muy Fachero</title>
     <link  rel="icon"   href="../img/favicon.png" type="image/png" />
 </head>
@@ -31,47 +31,38 @@
     </header>
 
     <div class="container">
-
-        <form action="" class="formulario" id="formulario">
-        <!--<form action="https://formspree.io/f/xqkjdzpb" method="post" id="formulario"> -->
-            <h2> | Dejanos tu mensaje |</h2> 
-
+            <form action="https://formspree.io/f/xqkjdzpb" name="formulario" method="post" id="formulario">
+            <h2> | Dejanos tu mensaje |</h2>
             <fieldset id="form-box">
+                <ul>
+                    <li> 
+                        <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="Nombre">
+                    </li>
 
-                <div class="formulario__grupo" id="grupo__nombre">
-                    <label for="nombre" class="formulario__label">Nombre</label>
-                    <div class="formulario__grupo-input">
-                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre">
-                    </div>
-                </div>
+                    <li>
+                        <!-- <label for="phone">Teléfono</label> -->
+                        <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+                    </li>
 
-                <div class="formulario__grupo" id="grupo__telefono">
-                    <label for="telefono" class="formulario__label">Teléfono</label>
-                    <div class="formulario__grupo-input">
-                        <input type="tel" class="formulario__input" name="telefono" id="telefono" placeholder="Teléfono">
-                    </div>
-                </div>
+                    <li>
+                        <!-- <label for="mail">Email</label> -->
+                        <input type="email" name="email" id="email" placeholder="Email">   
+                    </li>
 
-                <div class="formulario__grupo" id="grupo__email">
-                    <label for="email" class="formulario__label">Email</label>
-                    <div class="formulario__grupo-input">
-                        <input type="email" class="formulario__input" name="email" id="email" placeholder="Email">   
-                </div>
-
-                <div class="formulario__grupo" id="grupo__mensaje">
-                    <label for="mensaje" class="formulario__label">Mensaje</label>
-                    <div class="formulario__grupo-input">
+                    <li>
+                        <!-- <label for="message">Mensaje</label> -->
                         <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Dejanos tu mensaje aca..."></textarea>
-                    </div>
-                </div>
+                    </li>
 
-                <div class="formulario__grupo formulario__grupo-btn-enviar">
-                    <button type="submit" class="formulario__btn">Enviar</button>
-                    <!--<input type="submit" value="Submit" id="btn-enviar"> -->
-                </div>
-                 
+                    <li>
+                        <input type="submit" value="Submit" id="btn-enviar" />
+                    </li>
+                </ul> 
             </fieldset>
-        </form> 
+        </form>
+        <script>
+            validarFormulario();
+        </script>
 
    
         <div id="right-content">
@@ -115,6 +106,5 @@
         </div>
     </footer>
 
-    <script src="../js/validacion.js"></script>
 </body>
 </html>

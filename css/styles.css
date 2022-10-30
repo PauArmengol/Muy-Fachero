@@ -610,29 +610,29 @@ header ul li a:hover:before {
     font-size: 100%;
     font: inherit; 
   }
-  
-  #form-div {
+
+  #form-box ul {
     list-style: none;
     padding: .5em;
     margin-top: 5%;  
   }
   
-  /*
-  form li  {
+  
+  #form-box ul li  {
     font-family: "Poppins", sans-serif;
     margin-top: 2em;
     text-align: center;
     text-decoration: none;
-  } */
+  } 
   
-  
+  /*
   label {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     display: inline-block;
     width: 90px;
     text-align: center;
-  }
+  } */
   
   input, textarea {
     font: 1em "Poppins", sans-serif;
