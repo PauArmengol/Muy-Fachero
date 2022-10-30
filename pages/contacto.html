@@ -31,36 +31,41 @@
     </header>
 
     <div class="container">
-        <form action="https://formspree.io/f/xqkjdzpb" method="post" id="formulario"> 
-            <h2> | Dejanos tu mensaje |</h2>
+
+        <form action="" class="formulario" id="formulario">
+        <!--<form action="https://formspree.io/f/xqkjdzpb" method="post" id="formulario"> -->
+            <h2> | Dejanos tu mensaje |</h2> 
+
             <fieldset id="form-box">
-                <ul>
-                    <li>
-                        <label for="name">Nombre</label>
-                        <input type="text" name="name" id="usuario" placeholder="Nombre" required>
-                    </li>
 
-                    <li>
-                        <label for="phone">Teléfono</label>
-                        <input type="tel" name="phone" id="phone" placeholder="Teléfono" required>
-                    </li>
+                <div id="form-div">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                </div>
 
-                    <li>
-                        <label for="mail">Email</label>
-                        <input type="email" name="mail" id="email" placeholder="Email" required>   
-                    </li>
+                <div id="form-div">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+                </div>
 
-                    <li>
-                        <label for="message">Mensaje</label>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Dejanos tu mensaje aca..." required></textarea>
-                    </li>
+                <div id="form-div">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email">   
+                </div>
 
-                    <li>
-                        <input class="submit" type="submit" value="Submit" id="btn-enviar"/>
-                    </li>
-                </ul> 
+                <div id="form-div">
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Dejanos tu mensaje aca..."></textarea>
+                </div>
+
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn">Enviar</button>
+                    <!--<input type="submit" value="Submit" id="btn-enviar"> -->
+                </div>
+                 
             </fieldset>
-        </form>
+        </form> 
+
    
         <div id="right-content">
             <h3>Podes encontrarnos aca!</h3>
@@ -76,10 +81,7 @@
 
         </div>
     </div>
-
-    <div id="app">
-        <script src="../js/validacion.js"></script>
-    </div>
+   
 
     <footer class="footer-web">
         <div>
@@ -106,5 +108,6 @@
         </div>
     </footer>
 
+    <script src="../js/validacion.js"></script>
 </body>
 </html>
