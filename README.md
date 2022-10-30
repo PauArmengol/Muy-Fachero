@@ -26,7 +26,7 @@ Web estilo One Page, el mismo deberá tener al menos 5 secciones.
 Opcional: el formulario podrá enviar un email utilizando algún servicio externo
 destinado para ello.
 
--El formulario esta validado mediante Javascript (archivo "validacion.js") y se uso https://formspree.io/ para enviar los datos a un mail del equipo.
+-El formulario esta validado mediante Javascript (archivo "validacion.js") 
 
 ● Utilizar al menos un Iframe, íconos de FontAwesome o Flaticon; y fuentes locales o
 bien de Google Fonts.
@@ -36,19 +36,24 @@ bien de Google Fonts.
 ● Tener al menos una página totalmente responsive con 3 puntos de corte para 3
 tamaños de dispositivos distintos.
 
--Se ha realizado 
+-Se ha realizado Responsive Design con 3 breakpoints:
+    Smartphone: @media only screen and (max-width: 520px)
+    Tablet: @media only screen and (max-width: 750px)
+    Desktop: @media only screen and (max-width: 1130px)
 
 ● Incorporar al menos una animación, transformación o una transición (se deberá
 indicar en qué parte del sitio web fue incorporada la animación).
 
-
+-Se han realizado efectos de transición/transformación en el header (menu) y en la pagina de Servicios se ha hecho un carrousel de imagenes de proyectos realizados.
 
 ● Poseer una estructura HTML maquetada con Flexbox y/o Grid.
+
+-Se ha utilizado mFlexbox y Grid.
 
 ● Consumir una API Rest desde JavaScript. Deberá informar la API utilizada al
 momento de entregar el TPO.
 
-
+-La Api utilizada es: https://jsonplaceholder.typicode.com/comments 
 
 ● En caso de querer utilizar Bootstrap (no es obligatorio), sólo podrá hacerlo en la
 página del formulario del sitio web. No se aceptarán proyectos desarrollados
