@@ -4,259 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+   
+
     <title>Muy Fachero</title>
     <link  rel="icon"   href="../img/favicon.png" type="image/png" />
-   
 </head>
-
 <body>
     <header>
         <div class="logo">
-           <img src="../img/logo.png" alt="logo">  
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
         </div>
 
         <div  class="group">
             <ul class="navigation">
-                <li><a href="#">Home</a></li>
-                <li><a href="../pages/servicios.html" target="_blank">Servicios</a></li>
-                <li><a href="../pages/equipo.html" target="_blank">Equipo</a></li>
-                <li><a href="../pages/contacto.html" target="_blank">Contacto</a></li>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="pages/servicios.html" target="_blank">Servicios</a></li>
+                <li><a href="pages/equipo.html" target="_blank">Equipo</a></li>
+                <li><a href="pages/contacto.html" target="_blank">Contacto</a></li>
             </ul>
         </div>
     </header>
-
-     <!-- STAR AREA SERVICE -->
-
-     <section class="split-screen">
-
-        <div class="left">
-            <h1 class="services-title">MUY FACHERO</h1>
-            <p class="services-p"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus natus molestias sit illum? Iusto quod, totam quia modi, fuga maiores provident odit deserunt doloribus consectetur adipisci possimus autem excepturi repellendus.
-        
-        </div>
-
-        <div class="servicesright">
-            <div class="services-cards">
-                <article class="featured-services">
-                        <figure class="servicesimg">
-                            <img src="../img/iconos/reward.png" alt="iconopremios">
-                        </figure>
-                        <div class="services-contents">
-                            <h2>Lorem ipsum</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        </div>
-                </article>
-
-                <article class="featured-services">
-                        <figure class="servicesimg">
-                            <img src="../img/iconos/chat.png" alt="iconocchat">
-                        </figure>
-                        <div class="services-contents">
-                            <h2>Lorem ipsum</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        </div>
-                </article>
-
-                <article class="featured-services">
-                        <figure class="servicesimg">
-                            <img src="../img/iconos/bulb.png" alt="iconoidea">
-                        </figure>
-                        <div class="services-contents">
-                            <h2>Lorem ipsum</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        </div>
-                </article>
-
-                <article class="featured-services">
-                        <figure class="servicesimg">
-                            <img src="../img/iconos/heart.png" alt="iconocorazon">
-                        </figure>
-                        <div class="services-contents">
-                            <h2>Lorem ipsum</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        </div>
-                </article>
-
-            </div> 
-        </div>
-    </section>
-
-    <!-- END AREA SERVICE -->
     
-    <!-- STAR AREA PROYECTS -->
-<section class="project-screen">
-        <div class="brand-text">
-            <h2 class="subpage-title"> | Nuestros proyectos son muy copados |</h2>
+    <section class="split-screen">
+        <div class="left">
+            <h1 class="main-title">MUCHA IDENTIDAD</h1>
+            <p class="main-p"> El futuro del diseño Argentino</p>
         </div>
-
-        <div class="slider">
-            
-            <div class="slide active">
-              <img src="../img/campaña1.png" alt="">
-              <div class="info">
-                <h2>Campaña Marca 1</h2>
-              </div>
-            </div>
-            <div class="slide">
-              <img src="../img/campaña2.jpg" alt="">
-              <div class="info">
-                <h2>Campaña Marca 2</h2>
-              </div>
-            </div>
-            <div class="slide">
-              <img src="../img/campaña3.jpg" alt="">
-              <div class="info">
-                <h2>Campaña Marca 3</h2>
-              </div>
-            </div>
-            <div class="slide">
-              <img src="../img/campaña4.jpg" alt="">
-              <div class="info">
-                <h2>Campaña Marca 4</h2>
-              </div>
-            </div>
-            <div class="slide">
-              <img src="../img/campaña5.jpg" alt="">
-              <div class="info">
-                <h2>Campaña Marca 5</h2>
-              </div>
-            </div>
-            <div class="navigation">
-              <i class="fas fa-chevron-left prev-btn"></i>
-              <i class="fas fa-chevron-right next-btn"></i>
-            </div>
-            <div class="navigation-visibility">
-              <div class="slide-icon active"></div>
-              <div class="slide-icon"></div>
-              <div class="slide-icon"></div>
-              <div class="slide-icon"></div>
-              <div class="slide-icon"></div>
-            </div>
-          </div>
-
-          <script type="text/javascript">
-            const slider = document.querySelector(".slider");
-            const nextBtn = document.querySelector(".next-btn");
-            const prevBtn = document.querySelector(".prev-btn");
-            const slides = document.querySelectorAll(".slide");
-            const slideIcons = document.querySelectorAll(".slide-icon");
-            const numberOfSlides = slides.length;
-            var slideNumber = 0;
-        
-            //image slider next button
-            nextBtn.addEventListener("click", () => {
-              slides.forEach((slide) => {
-                slide.classList.remove("active");
-              });
-              slideIcons.forEach((slideIcon) => {
-                slideIcon.classList.remove("active");
-              });
-        
-              slideNumber++;
-        
-              if(slideNumber > (numberOfSlides - 1)){
-                slideNumber = 0;
-              }
-        
-              slides[slideNumber].classList.add("active");
-              slideIcons[slideNumber].classList.add("active");
-            });
-        
-            //image slider previous button
-            prevBtn.addEventListener("click", () => {
-              slides.forEach((slide) => {
-                slide.classList.remove("active");
-              });
-              slideIcons.forEach((slideIcon) => {
-                slideIcon.classList.remove("active");
-              });
-        
-              slideNumber--;
-        
-              if(slideNumber < 0){
-                slideNumber = numberOfSlides - 1;
-              }
-        
-              slides[slideNumber].classList.add("active");
-              slideIcons[slideNumber].classList.add("active");
-            });
-        
-            //image slider autoplay
-            var playSlider;
-        
-            var repeater = () => {
-              playSlider = setInterval(function(){
-                slides.forEach((slide) => {
-                  slide.classList.remove("active");
-                });
-                slideIcons.forEach((slideIcon) => {
-                  slideIcon.classList.remove("active");
-                });
-        
-                slideNumber++;
-        
-                if(slideNumber > (numberOfSlides - 1)){
-                  slideNumber = 0;
-                }
-        
-                slides[slideNumber].classList.add("active");
-                slideIcons[slideNumber].classList.add("active");
-              }, 4000);
-            }
-            repeater();
-        
-            //stop the image slider autoplay on mouseover
-            slider.addEventListener("mouseover", () => {
-              clearInterval(playSlider);
-            });
-        
-            //start the image slider autoplay again on mouseout
-            slider.addEventListener("mouseout", () => {
-              repeater();
-            });
-            </script>
-              
-
-    </section>
-    <!-- END AREA PROYECTS -->
-
-    <!-- STAR AREA BRAND -->
-    <section class="brand">
-        <div class="brand-text">
-            <h2 class="subpage-title"> | Marcas que confian en nosotros |</h2>
-        </div>
-        <div class="cards">
-                <div class="brandimage">
-                    <img src="../img/marcas/Arcor_logo.svg.png" alt="">
-                </div>
-                <div class="brandimage">
-                    <img src="../img/marcas/binance-logo-1.png" alt="">
-                </div>
-                <div class="brandimage">
-                    <img src="../img/marcas/Logotipo_de_Ualá.svg.png" alt="">
-                </div>
-                <div class="brandimage">
-                    <img src="../img/marcas/Personal_logonuevo.png" alt="">
-                </div>
-                <div class="brandimage">
-                    <img src="../img/marcas/Flow_logo_2021.svg.png" alt="">
-                </div>
-                <div class="brandimage">
-                    <img src="../img/marcas/Quilmes_Logo_Nuevo.png" alt="">
-                </div>
+        <div class="right">
+           
         </div>
     </section>
-    <!-- END AREA BRAND -->
-
-
-
-
-
 
     <footer class="footer-web">
         <div>
@@ -264,16 +49,16 @@
                 <div class="box">
                     <figure>
                         <a href="#">
-                            <img src="../img/logo.png" alt="Logo">
+                            <img src="img/logo.png" alt="Logo">
                         </a>
                         <h2>AGENCIA DE DISEÑO</h2>
                     </figure>
                 </div>
                 <div class="box">
                     <div class="red-social">
-                        <a href="https://es-la.facebook.com/" class="icon-rrss"><img src="../img/iconos/fb.png" alt="fb"></a>
-                        <a href="https://www.instagram.com/" class="icon-rrss"><img src="../img/iconos/ig.png" alt="ig"></a>
-                        <a href="https://twitter.com/?lang=es" class="icon-rrss"><img src="../img/iconos/tw.png" alt="tw"></a>
+                        <a href="https://es-la.facebook.com/" class="icon-rrss" target="_blank"><img src="img/iconos/fb.png" alt="fb"></a>
+                        <a href="https://www.instagram.com/" class="icon-rrss" target="_blank"><img src="img/iconos/ig.png" alt="ig"></a>
+                        <a href="https://twitter.com/?lang=es" class="icon-rrss" target="_blank"><img src="img/iconos/tw.png" alt="tw"></a> 
                     </div>
                 </div>
             </div>
@@ -282,6 +67,9 @@
             </div>
         </div>
     </footer>
-</body>
 
+    <div id="app"></div>
+    <script src="/js/index.js"  type="module"></script>
+
+</body>
 </html>

@@ -3,6 +3,7 @@ const btnEnviar = document.getElementById('btn-enviar');
 
 const validación = (e) => {
   e.preventDefault();
+  
   const nombreDeUsuario = document.getElementById('usuario');
   const direcciónEmail = document.getElementById('email');
   if (usuario.value === "") {
