@@ -14,8 +14,30 @@ const expresiones = {
 
 
 
-const validarFormulario = () => {
-  console.log(`se ejecuto`);
+const validarFormulario = (e) => {
+  switch (e.target.name) {
+    case "nombre":
+      if(expresiones.nombre.test(e.target.value)) {
+
+
+      } else {
+        document.getElementById(`grupo__nombre`).classList.add(`formulario__grupo-incorrecto`);
+      }
+
+    break;
+
+    case "telefono": 
+
+    break;
+
+    case "email": 
+
+    break;
+
+    case "mensaje": 
+
+    break;
+  }
 }
 
 inputs.forEach((input) => {

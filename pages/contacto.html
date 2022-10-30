@@ -38,24 +38,31 @@
 
             <fieldset id="form-box">
 
-                <div id="form-div">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label">Nombre</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre">
+                    </div>
                 </div>
 
-                <div id="form-div">
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+                <div class="formulario__grupo" id="grupo__telefono">
+                    <label for="telefono" class="formulario__label">Teléfono</label>
+                    <div class="formulario__grupo-input">
+                        <input type="tel" class="formulario__input" name="telefono" id="telefono" placeholder="Teléfono">
+                    </div>
                 </div>
 
-                <div id="form-div">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Email">   
+                <div class="formulario__grupo" id="grupo__email">
+                    <label for="email" class="formulario__label">Email</label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="email" id="email" placeholder="Email">   
                 </div>
 
-                <div id="form-div">
-                    <label for="message">Mensaje</label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Dejanos tu mensaje aca..."></textarea>
+                <div class="formulario__grupo" id="grupo__mensaje">
+                    <label for="mensaje" class="formulario__label">Mensaje</label>
+                    <div class="formulario__grupo-input">
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Dejanos tu mensaje aca..."></textarea>
+                    </div>
                 </div>
 
                 <div class="formulario__grupo formulario__grupo-btn-enviar">
